@@ -13,8 +13,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="p-4 min-h-[100vh] bg-gradient-to-br from-sky-500 to-indigo-500">
-        <Nav endpoints={["About", "Methods", "Testamonials", "Contact Us"]} />
+      <body className="p-4 min-h-[100vh] bg-gradient-to-br from-[#E8F0FE] to-[#E8F0FE] via-[#98b5ea]">
+        <Nav endpoints={["About", "Methods", "Testamonials", "Contact"]} />
         {children}
       </body>
     </html>

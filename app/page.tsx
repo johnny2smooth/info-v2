@@ -16,18 +16,20 @@ export default function Home() {
   return (
     <main className="stack">
       <div id="intro" className="flex flex-wrap stack">
-        <div className="flex stack flex-col">
-          <h2>Treatment Companion</h2>
-          <h3>
+        <div className="flex stack flex-col ">
+          <h2 className="text-[#2a528a]">Treatment Companion</h2>
+          <h3 className="text-[#003587] text-3xl">
             An adaptable solution helping improve the treatment process for
             tuberculosis patients worldwide.
           </h3>
-          <div className="">
-            Currently Deployed For Clinical Trial In Argentina
+          <div className="bg-slate-50 border-[#E8F0FE] border-2 border-solid rounded-md text-[#2a528a] p-4">
+            Currently Deployed For Clinical Trial In Argentina 🇦🇷 and Indonesia
+            🇮🇩
           </div>
         </div>
         <Image src={home} alt="treatment companion" />
         <Problems />
+        <Solution />
         <System />
         <Contact />
       </div>
@@ -37,10 +39,10 @@ export default function Home() {
 
 const Problems = () => {
   return (
-    <div id="problems" className="stack">
-      <div className="stack">
-        <h3>The issue</h3>
-        <aside>
+    <div id="problems" className="stack bg-white p-4 rounded-md">
+      <div className="stack text-[#2a528a]">
+        <h3 className="text-[#4285f4b3] font-bold text-2xl">THE ISSUE</h3>
+        <aside className="border-l-8 border-[#4285f4] border-solid text-2xl font-semibold text-[#2a528a] pl-4">
           Tuberculosis (TB) remains a major global public health problem.
         </aside>
         <p>
@@ -52,16 +54,24 @@ const Problems = () => {
           obstacles such as treatment length, social stigma, and poverty often
           get in the way of successful treatment.
         </p>
-        <p>
-          <span>1.7 billion</span> people are infected with latent TB
+        <p className="text-lg text-[#000000b3] font-light flex flex-col stack">
+          <span className="text-6xl text-[#7da9f8] font-serif">
+            1.7 billion
+          </span>
+          <span> people are infected with latent TB</span>
         </p>
-        <p>
-          <span>~4100</span> TB-related deaths per day in 2018
+        <p className="text-lg text-[#000000b3] font-light flex flex-col stack">
+          <span className="text-6xl text-[#7da9f8] font-serif">~4100</span>{" "}
+          <span> TB-related deaths per day in 2018</span>
         </p>
       </div>
-      <div className="stack">
-        <h3>Exisiting treatments</h3>
-        <aside>Current TB treatments fail to reach their full potential.</aside>
+      <div className="stack text-[#2a528a]">
+        <h3 className="text-[#4285f4b3] font-bold text-2xl">
+          EXISTING TREATMENTS
+        </h3>
+        <aside className="border-l-8 border-[#4285f4] border-solid text-2xl font-semibold text-[#2a528a] pl-4">
+          Current TB treatments fail to reach their full potential.
+        </aside>
         <p>
           The World Health Organization currently recommends the DOTS (Directly
           Observed Treatment, Short-Course) treatment strategy, where patients
@@ -73,12 +83,15 @@ const Problems = () => {
           New patient-centered strategies are needed in order to drive long-term
           improvement in TB treatment outcomes.
         </p>
-        <p>
-          <span>45%</span> of new TB cases lost to follow-up
+        <p className="text-lg text-[#000000b3] font-light flex flex-col stack">
+          <span className="text-6xl text-[#7da9f8] font-serif">45%</span>{" "}
+          <span>of new TB cases lost to follow-up</span>
         </p>
-        <p>
-          <span>10 years</span> without any significant improvement in TB
-          treatment success rate
+        <p className="text-lg text-[#000000b3] font-light flex flex-col stack">
+          <span className="text-6xl text-[#7da9f8] font-serif">10 years</span>{" "}
+          <span>
+            without any significant improvement in TB treatment success rate
+          </span>
         </p>
       </div>
     </div>
@@ -88,12 +101,14 @@ const Problems = () => {
 const Solution = () => {
   return (
     <div id="solution">
-      <div className="stack">
-        <h3>Our solution</h3>
-        <p>
+      <div className="stack bg-[#7da9f8] border-[#2a528a] border-solid border-4 p-4 rounded-md text-[#003587]">
+        <h3 className="font-bold text-3xl">OUR SOLUTION</h3>
+        <p className="text-lg">
           The Treatment Companion system allows trained coordinators to provide
           regular support to patients and ultimately aims to{" "}
-          <span>increase rates of treatment success.</span>
+          <span className="font-bold text-xl ">
+            increase rates of treatment success.
+          </span>
         </p>
       </div>
     </div>

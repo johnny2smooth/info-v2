@@ -7,7 +7,7 @@ export default function Nav({
   endpoints,
 }: // translations,
 {
-  endpoints: ["About", "Methods", "Testamonials", "Contact Us"];
+  endpoints: ["About", "Methods", "Testamonials", "Contact"];
   // translations: {
   //   about: string;
   //   practice: string;
@@ -57,25 +57,25 @@ export default function Nav({
         </Link>
       </div>
       <div className="grow">
-        <h1 className="text-4xl text-white">TB-TST</h1>
+        <h1 className="text-4xl text-[#003587] font-serif">TB-TST+</h1>
       </div>
       <button
         id="mobile-nav-button"
         onClick={toggleMenu}
-        className="flex items-center justify-end w-10 h-10 rounded-md ring-2 bg-gradient-to-br from-sky-500 to-indigo-500 ring-offset-2 ring-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 lg:hidden bg-transparent "
+        className="flex items-center justify-end w-10 h-10 rounded-md border-2 border-solid border-[#003587] ring-offset-2 ring-[#3E7FF3] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3E7FF3] lg:hidden mr-4"
       >
         <span
-          className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+          className={`block w-6 h-0.5 bg-[#003587] transition-all duration-300 ${
             isOpen ? "transform rotate-45" : ""
           }`}
         ></span>
         <span
-          className={`block w-6 h-0.5 bg-white mt-1.5 mb-1.5 transition-all duration-300 ${
+          className={`block w-6 h-0.5 bg-[#003587] mt-1.5 mb-1.5 transition-all duration-300 ${
             isOpen ? "opacity-0" : ""
           }`}
         ></span>
         <span
-          className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+          className={`block w-6 h-0.5 bg-[#003587] transition-all duration-300 ${
             isOpen ? "transform -rotate-45" : ""
           }`}
         ></span>
@@ -84,7 +84,7 @@ export default function Nav({
       {/* Mobile navigation menu */}
       <nav
         id="mobile-nav"
-        className={`absolute z-10 transition-all duration-300 p-4 top-full left-0 mt-2 w-full bg-gradient-to-br border-white border-2 from-sky-500 to-indigo-500 opacity-90 rounded-md shadow-lg lg:hidden ${
+        className={`absolute z-10 transition-all duration-300 bg-[#3E7FF3] p-4 top-full left-0 mt-2 w-full border-white border-2 rounded-md shadow-lg lg:hidden ${
           isOpen ? "block" : "hidden"
         }`}
       >
@@ -97,7 +97,7 @@ export default function Nav({
                   className="block px-4 py-2 hover:bg-gray-200 active:text-red-400"
                 >
                   <Link
-                    href={`/${endpoint}`}
+                    href={`/${endpoint.toLowerCase()}`}
                     onClick={toggleMenu}
                     className={`text-xl text-white  active:text-red-400`}
                   >
