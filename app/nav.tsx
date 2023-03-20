@@ -45,7 +45,7 @@ export default function Nav({
   }, [isOpen]);
 
   return (
-    <header className="relative w-full flex justify-start items-center gap-4 mb-10">
+    <header className="relative w-full flex justify-start items-center gap-4 mb-10 border-b-2 border-solid border-[#4285f4]">
       <div aria-hidden="false" className="flex justify-center items-center">
         <Link href={`/`} className={`s4 text-[#4969ed]`}>
           <Image
@@ -57,25 +57,25 @@ export default function Nav({
         </Link>
       </div>
       <div className="grow">
-        <h1 className="text-4xl text-[#003587] font-serif">TB-TST+</h1>
+        <h1 className="text-4xl text-[#003587] font-serif">TB-TST</h1>
       </div>
       <button
         id="mobile-nav-button"
         onClick={toggleMenu}
-        className="flex items-center justify-end w-10 h-10 rounded-md border-2 border-solid border-[#003587] ring-offset-2 ring-[#3E7FF3] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3E7FF3] lg:hidden mr-4"
+        className="flex items-center justify-end w-10 h-10 rounded-md border-2 border-solid border-[#4285f4] ring-offset-2 ring-[#3E7FF3] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3E7FF3] lg:hidden mr-4"
       >
         <span
-          className={`block w-6 h-0.5 bg-[#003587] transition-all duration-300 ${
+          className={`block w-6 h-0.5 bg-[#4285f4] transition-all duration-300 ${
             isOpen ? "transform rotate-45" : ""
           }`}
         ></span>
         <span
-          className={`block w-6 h-0.5 bg-[#003587] mt-1.5 mb-1.5 transition-all duration-300 ${
+          className={`block w-6 h-0.5 bg-[#4285f4] mt-1.5 mb-1.5 transition-all duration-300 ${
             isOpen ? "opacity-0" : ""
           }`}
         ></span>
         <span
-          className={`block w-6 h-0.5 bg-[#003587] transition-all duration-300 ${
+          className={`block w-6 h-0.5 bg-[#4285f4] transition-all duration-300 ${
             isOpen ? "transform -rotate-45" : ""
           }`}
         ></span>
@@ -84,12 +84,12 @@ export default function Nav({
       {/* Mobile navigation menu */}
       <nav
         id="mobile-nav"
-        className={`absolute z-10 transition-all duration-300 bg-[#3E7FF3] p-4 top-full left-0 mt-2 w-full border-white border-2 rounded-md shadow-lg lg:hidden ${
+        className={`absolute z-10 transition-all duration-300 p-4 top-full right-0 mt-2 w-3/4  shadow-lg lg:hidden bg-[#4285f4] rounded-md text-[#cce0ffe5] ${
           isOpen ? "block" : "hidden"
         }`}
       >
-        <div className="flex justify-around items-end ">
-          <ul className="flex flex-wrap">
+        <div className="flex justify-end items-end ">
+          <ul className="flex flex-col justify-end items-end">
             {endpoints.map((endpoint) => {
               return (
                 <li
@@ -99,7 +99,7 @@ export default function Nav({
                   <Link
                     href={`/${endpoint.toLowerCase()}`}
                     onClick={toggleMenu}
-                    className={`text-xl text-white  active:text-red-400`}
+                    className={`text-2xl  active:text-red-400`}
                   >
                     {/* {translations[endpoint]} */}
                     {endpoint}
