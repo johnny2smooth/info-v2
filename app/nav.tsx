@@ -46,7 +46,10 @@ export default function Nav({
 
   return (
     <header className="relative w-full flex justify-start items-center gap-4 mb-10 border-b-2 border-solid border-[#4285f4]">
-      <div aria-hidden="false" className="flex justify-center items-center">
+      <div
+        aria-hidden="false"
+        className="flex justify-center items-center max-w-5xl"
+      >
         <Link href={`/`} className={`s4 text-[#4969ed]`}>
           <Image
             src="/logo.png"
@@ -57,7 +60,9 @@ export default function Nav({
         </Link>
       </div>
       <div className="grow">
-        <h1 className="text-4xl text-[#003587] font-serif">TB-TST</h1>
+        <h1 className="text-4xl text-[#003587] font-serif">
+          Treatment Companion
+        </h1>
       </div>
       <button
         id="mobile-nav-button"
@@ -113,15 +118,18 @@ export default function Nav({
 
       {/* Desktop navigation menu */}
       <nav className="hidden space-x-4 lg:flex lg:items-center">
-        <a href="#" className="px-4 py-2 hover:bg-gray-200 rounded-md">
-          About
-        </a>
-        <a href="#" className="px-4 py-2 hover:bg-gray-200 rounded-md">
-          Services
-        </a>
-        <a href="#" className="px-4 py-2 hover:bg-gray-200 rounded-md">
-          Contact
-        </a>
+        {endpoints.map((endpoint) => {
+          return (
+            <Link
+              key={endpoint}
+              href={`/${endpoint.toLowerCase()}`}
+              className={`text-2xl text-[#003587]  active:text-red-400`}
+            >
+              {/* {translations[endpoint]} */}
+              {endpoint}
+            </Link>
+          );
+        })}
       </nav>
     </header>
   );
