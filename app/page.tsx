@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="stack">
       <div id="intro" className="flex flex-wrap stack">
-        <div className="flex stack flex-col">
+        <div className="flex stack flex-col items-center mx-auto max-w-prose">
           <h2 className="text-[#2a528a]">Treatment Companion</h2>
           <h3 className="text-[#003587] text-3xl">
             An adaptable solution helping improve the treatment process for
@@ -27,7 +27,7 @@ export default function Home() {
         <Problems />
         <Solution />
         <System />
-        <Contact />
+        {/* <Contact /> */}
       </div>
     </main>
   );

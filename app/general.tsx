@@ -10,75 +10,31 @@ import chat from "../public/system/chat.png";
 
 function Contact() {
   return (
-    <div id="contact" className="stack bg-[#4285f4] p-4 rounded-md">
-      <h3 className="text-2xl text-[#cce0ffe5] ">
-        Interested in learning more about our research and approaches?
-      </h3>
-      <form>
-        <div className="flex flex-col items-start gap-4">
-          <div className="flex flex-col text-lg w-full">
-            <label htmlFor="name" className="text-[#cce0ffaa]">
-              Your Name <span className="text-xs">required*</span>
-            </label>
-            <input
-              className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-md"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Jemica Stone"
-              autoComplete="name"
-              required
-            />
-          </div>
-          <div className="flex flex-col text-lg w-full">
-            <label htmlFor="email" className="text-[#cce0ffaa]">
-              Email <span className="text-xs">required*</span>
-            </label>
-            <input
-              className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-md"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="jemica@uw.edu"
-              autoComplete="email"
-              required
-            />
-          </div>
-          <div className="flex flex-col text-lg w-full">
-            <label htmlFor="organization" className="text-[#cce0ffaa]">
-              Organization
-            </label>
-            <input
-              className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-md"
-              type="text"
-              id="organization"
-              name="organization"
-              placeholder="University of Washington"
-            />
-          </div>
-          <div className="flex self-end">
-            <button
-              className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-lg"
-              type="submit"
-            >
-              Contact us
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
+    <form action="/send-data-here" method="post">
+      <label htmlFor="roll">Roll Number</label>
+      <input
+        type="text"
+        id="roll"
+        name="roll"
+        required
+        // minLength="10"
+        // maxlength="20"
+      />
+      <label htmlFor="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <button type="submit">Submit</button>
+    </form>
   );
 }
 
 const System = () => {
   return (
     <div id="system" className="stack">
-      <h3 className="text-[#2a528a] text-4xl font-serif font-semibold">
-        System at a glance
-      </h3>
       <div className="flex flex-wrap stack">
+        <h3 className="text-[#2a528a] text-4xl font-serif font-semibold self-center">
+          System at a glance
+        </h3>
         <div className="stack">
-          <div></div>
           <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-lg">
             Patient Flow
           </h4>
@@ -104,36 +60,43 @@ const System = () => {
                 </p>
               </div>
             </div>
-            <div></div>
           </div>
         </div>
-
         <div className="stack">
           <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-lg">
             Treatment Supporter Flow
           </h4>
-          <Image src={coordinator} alt="coordinator" />
-        </div>
-        <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
-          <Image src={desktop} alt="pill" />
-          <p>
-            Monitors overall progress of their cohort of patients using
-            coordinator app.
-          </p>
-        </div>
-        <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
-          <Image src={check} alt="phone" />
-          <p>
-            Reviews submitted patient reports and follows up if necessary. app
-            to fill out a daily report of their adherence, symptoms, and mood.
-          </p>
-        </div>
-        <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
-          <Image src={chat} alt="test" />
-          <p>
-            Communicates with patients and provides support as needed. asks them
-            to and submits photo of test results.
-          </p>
+          <div className="flex flex-wrap justify-start gap-8 mx-auto">
+            <Image src={coordinator} alt="coordinator" className="mx-auto" />
+            <div className="flex flex-col max-w-lg gap-4 grow mx-auto">
+              <div className="flex flex-col max-w-lg gap-4 grow mx-auto">
+                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]  max-w-prose">
+                  <Image src={desktop} alt="dekstop version of the app" />
+                  <p>
+                    Monitors overall progress of their cohort of patients using
+                    coordinator app.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
+                  <Image src={check} alt="checking off a patient report" />
+                  <p>
+                    Uses patient app to fill out a daily report of their
+                    adherence, symptoms, and mood.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
+                  <Image
+                    src={chat}
+                    alt="messaging between patient and practitioner"
+                  />
+                  <p>
+                    Takes metabolite test when app asks them to and submits
+                    photo of test results.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

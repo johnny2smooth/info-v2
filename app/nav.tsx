@@ -60,11 +60,9 @@ export default function Nav({
         </Link>
       </div>
       <div className="grow">
-        <Link href={`/`}>
-          <h1 className="text-2xl text-[#003587] font-serif">
-            Treatment Companion
-          </h1>
-        </Link>
+        <h1 className="text-2xl text-[#003587] font-serif">
+          <Link href={`/`}>Treatment Companion</Link>
+        </h1>
       </div>
       <button
         id="mobile-nav-button"
