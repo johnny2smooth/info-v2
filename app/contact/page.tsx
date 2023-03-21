@@ -1,4 +1,4 @@
-import { Contact } from "@/components/general";
+import { Contact } from "../general";
 export default function Page() {
   return (
     <div className="stack">

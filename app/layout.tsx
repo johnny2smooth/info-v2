@@ -18,9 +18,9 @@ export default function RootLayout({
           endpoints={["About", "Methods", "Testamonials", "Contact", "Team"]}
         />
         {children}
-        <footer className="">
+        {/* <footer className="">
           <p>feeter</p>
-        </footer>
+        </footer> */}
       </body>
     </html>
   );
