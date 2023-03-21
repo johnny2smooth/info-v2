@@ -1,3 +1,10 @@
+import { Contact } from "@/components/general";
+
 export default function Page() {
-  return <p>I am the about page</p>;
+  return (
+    <div className="stack">
+      <p>I am the about page</p>
+      <Contact />
+    </div>
+  );
 }

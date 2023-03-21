@@ -7,7 +7,7 @@ export default function Nav({
   endpoints,
 }: // translations,
 {
-  endpoints: ["About", "Methods", "Testamonials", "Contact"];
+  endpoints: ["About", "Methods", "Testamonials", "Contact", "Team"];
   // translations: {
   //   about: string;
   //   practice: string;
