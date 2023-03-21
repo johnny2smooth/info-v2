@@ -15,3 +15,16 @@
 .stack > * + * {
   margin-block-start: var(--space, 1.5rem);
 }
+
+.team-pictures:nth-child(n) {
+  /* margin-left: -1.5rem; */
+  border: solid 2px #4285f4;
+}
+
+.team-pictures:nth-child(even) {
+  border: solid 2px #cce0ffe5;
+}
+
+.team-pictures:first-child {
+  margin-left: 0;
+}
