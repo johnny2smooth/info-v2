@@ -9,9 +9,9 @@
     "bodyArr": ["1"]
   },
   "nav": {
-    "about": "about",
-    "methods": "methods",
-    "testamonials": "testamonials",
+    "about": "sobre",
+    "methods": "metodos",
+    "testamonials": "testemunhos",
     "contact": "contact",
     "team": "team"
   },

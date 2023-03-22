@@ -23,19 +23,15 @@ export default async function Root({
 }) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
-
-  const { home } = dictionary;
-  console.log(home);
   return (
     <html lang="en">
       <body className="p-4 min-h-[100vh] relative bg-gradient-to-br from-[#E8F0FE] to-[#E8F0FE] via-[#98b5ea]">
         <Nav
-          endpoints={["About", "Methods", "Testamonials", "Contact", "Team"]}
+          lang={lang}
+          endpoints={["about", "methods", "testamonials", "contact", "team"]}
+          translations={dictionary.nav}
         />
         {children}
-        {/* <footer className="">
-          <p>feeter</p>
-        </footer> */}
       </body>
     </html>
   );

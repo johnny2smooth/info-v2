@@ -9,7 +9,7 @@
     "bodyArr": ["1"]
   },
   "nav": {
-    "about": "about",
+    "about": "about id",
     "methods": "methods",
     "testamonials": "testamonials",
     "contact": "contact",

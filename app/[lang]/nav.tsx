@@ -2,22 +2,24 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Locale } from "@/i18n-config";
 
 export default function Nav({
+  lang,
   endpoints,
-}: // translations,
-{
-  endpoints: ["About", "Methods", "Testamonials", "Contact", "Team"];
-  // translations: {
-  //   about: string;
-  //   practice: string;
-  //   services: string;
-  //   writing: string;
-  // };
+  translations,
+}: {
+  lang: Locale;
+  endpoints: ["about", "methods", "testamonials", "contact", "team"];
+  translations: {
+    about: string;
+    methods: string;
+    testamonials: string;
+    contact: string;
+    team: string;
+  };
 }) {
   const [isOpen, setIsOpen] = useState(false);
-  // const pathName = usePathname();
-  // const currentLocale = pathName?.split('/')[2];
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -102,12 +104,12 @@ export default function Nav({
                   className="block px-4 py-2 hover:bg-gray-200 active:text-red-400"
                 >
                   <Link
-                    href={`/${endpoint.toLowerCase()}`}
+                    href={`/${lang}/${endpoint}`}
                     onClick={toggleMenu}
                     className={`text-2xl  active:text-red-400`}
                   >
                     {/* {translations[endpoint]} */}
-                    {endpoint}
+                    {translations[endpoint]}
                   </Link>
                 </li>
               );

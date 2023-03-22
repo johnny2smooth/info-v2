@@ -1,7 +1,7 @@
 {
   "title": "hello",
   "home": {
-    "title": "title",
+    "title": "home",
     "subtitle": "subtitle",
     "description": "description",
     "keywords": ["1"],
@@ -16,7 +16,7 @@
     "team": "team"
   },
   "about": {
-    "title": "title",
+    "title": "about",
     "subtitle": "subtitle",
     "description": "description",
     "keywords": ["1"],
@@ -40,7 +40,7 @@
     "bodyArr": ["1"]
   },
   "contact": {
-    "title": "title",
+    "title": "contact",
     "subtitle": "subtitle",
     "description": "description",
     "keywords": ["1"],
