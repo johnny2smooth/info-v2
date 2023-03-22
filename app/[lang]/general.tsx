@@ -289,39 +289,6 @@ const Problems = ({ problems }: { problems: Problem }) => {
           )}
         </div>
       </div>
-      {/* <div className="flex flex-wrap items-end gap-4">
-        <div className="stack text-[#2a528a] max-w-prose">
-          <h3 className="text-[#4285f4b3] font-bold text-2xl">
-            EXISTING TREATMENTS
-          </h3>
-          <aside className="border-l-8 border-[#4285f4] border-solid text-2xl font-semibold text-[#2a528a] pl-4">
-            Current TB treatments fail to reach their full potential.
-          </aside>
-          <p>
-            The World Health Organization currently recommends the DOTS
-            (Directly Observed Treatment, Short-Course) treatment strategy,
-            where patients are observed while taking their medication. Despite
-            the adoption of DOTS, however, TB case rates in many countries are
-            either stagnant or decreasing more slowly than expected.
-          </p>
-          <p>
-            New patient-centered strategies are needed in order to drive
-            long-term improvement in TB treatment outcomes.
-          </p>
-        </div>
-        <div className="flex flex-col grow justify-end items-center border-solid border-2 border-[#4285f4] rounded-md p-4 max-w-prose mx-auto">
-          <p className="text-lg text-[#000000b3] font-light flex flex-col stack max-w-xs">
-            <span className="text-6xl text-[#7da9f8] font-serif">45%</span>{" "}
-            <span>of new TB cases lost to follow-up</span>
-          </p>
-          <p className="text-lg text-[#000000b3] font-light flex flex-col stack  max-w-xs">
-            <span className="text-6xl text-[#7da9f8] font-serif">10 years</span>{" "}
-            <span>
-              without any significant improvement in TB treatment success rate
-            </span>
-          </p>
-        </div>
-      </div> */}
     </div>
   );
 };
