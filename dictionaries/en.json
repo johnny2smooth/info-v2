@@ -16,12 +16,14 @@
     "team": "team"
   },
   "about": {
-    "title": "about",
-    "subtitle": "subtitle",
-    "description": "description",
+    "title": "Who we are",
+    "subtitle": "What we do",
+    "description": "All about our mission + more. What have we learned along the way and where do we see this project in 1 year",
     "keywords": ["1"],
     "banner": "banner",
-    "bodyArr": ["1"]
+    "bodyArr": [
+      "All about our mission + more. What have we learned along the way and where do we see this project in 1 year"
+    ]
   },
   "methods": {
     "title": "title",
@@ -53,7 +55,37 @@
     "description": "description",
     "keywords": ["1"],
     "banner": "banner",
-    "bodyArr": ["1"]
+    "bodyArr": ["1"],
+    "members": [
+      {
+        "firstName": "Jojo",
+        "lastName": "Bizarro",
+        "image": "jojo",
+        "role": "CEO",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+      },
+      {
+        "firstName": "Meme",
+        "lastName": "Lord",
+        "image": "meme",
+        "role": "CTO",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+      },
+      {
+        "firstName": "John",
+        "lastName": "Doe",
+        "image": "john",
+        "role": "CFO",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+      },
+      {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "image": "jane",
+        "role": "CMO",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+      }
+    ]
   },
   "footer": {
     "title": "title",
