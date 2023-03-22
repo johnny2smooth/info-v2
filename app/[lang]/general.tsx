@@ -1,12 +1,12 @@
 import Image from "next/image";
-import patient from "../public/system/patient.svg";
-import pill from "../public/system/pill.png";
-import phone from "../public/system/phone.png";
-import test from "../public/system/test.png";
-import coordinator from "../public/system/coordinator.svg";
-import desktop from "../public/system/desktop.png";
-import check from "../public/system/check.png";
-import chat from "../public/system/chat.png";
+import patient from "../../public/system/patient.svg";
+import pill from "../../public/system/pill.png";
+import phone from "../../public/system/phone.png";
+import test from "../../public/system/test.png";
+import coordinator from "../../public/system/coordinator.svg";
+import desktop from "../../public/system/desktop.png";
+import check from "../../public/system/check.png";
+import chat from "../../public/system/chat.png";
 
 function Contact() {
   return (
