@@ -19,64 +19,56 @@ type Contact = {
   organizationPlaceholder: string;
   contact: string;
 };
-async function Contact({ contact }: { contact: Contact }) {
-  const {
-    title,
-    required,
-    name,
-    namePlaceholder,
-    email,
-    emailPlaceholder,
-    organization,
-    organizationPlaceholder,
-    contact: contactUs,
-  } = contact;
+
+function Contact({ contact }: { contact: Contact }) {
   return (
     <div
       id="contact"
       className="stack bg-[#4285f4] p-4 rounded-md max-w-prose mx-auto"
     >
-      <h3 className="text-2xl text-[#cce0ffe5] ">{title}</h3>
+      <h3 className="text-2xl text-[#cce0ffe5] ">{contact.title}</h3>
       <form>
         <div className="flex flex-col items-start gap-4">
           <div className="flex flex-col text-lg w-full">
             <label htmlFor="name" className="text-[#cce0ffaa]">
-              {name} <span className="text-xs">{required}*</span>
+              {contact.name}{" "}
+              <span className="text-xs">{contact.required}*</span>
             </label>
             <input
               className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-md"
               type="text"
               id="name"
               name="name"
-              placeholder={namePlaceholder}
+              placeholder={contact.namePlaceholder}
               autoComplete="name"
               required
             />
           </div>
           <div className="flex flex-col text-lg w-full">
             <label htmlFor="email" className="text-[#cce0ffaa]">
-              {email} <span className="text-xs">{required}*</span>
+              {contact.email}{" "}
+              <span className="text-xs">{contact.required}*</span>
             </label>
             <input
               className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-md"
               type="email"
               id="email"
               name="email"
-              placeholder={emailPlaceholder}
+              placeholder={contact.emailPlaceholder}
               autoComplete="email"
               required
             />
           </div>
           <div className="flex flex-col text-lg w-full">
             <label htmlFor="organization" className="text-[#cce0ffaa]">
-              {organization}
+              {contact.organization}
             </label>
             <input
               className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-md"
               type="text"
               id="organization"
               name="organization"
-              placeholder={organizationPlaceholder}
+              placeholder={contact.organizationPlaceholder}
             />
           </div>
           <div className="flex self-end">
@@ -84,7 +76,7 @@ async function Contact({ contact }: { contact: Contact }) {
               className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-lg"
               type="submit"
             >
-              {contactUs}
+              {contact.contact}
             </button>
           </div>
         </div>
@@ -93,72 +85,98 @@ async function Contact({ contact }: { contact: Contact }) {
   );
 }
 
-const System = () => {
+type System = {
+  title: string;
+  patientFlow: {
+    title: string;
+    patientSrc: string;
+    patientAlt: string;
+    pillSrc: string;
+    pillAlt: string;
+    pillDescription: string;
+    phoneSrc: string;
+    phoneAlt: string;
+    phoneDescription: string;
+    testSrc: string;
+    testAlt: string;
+    testDescription: string;
+  };
+  coordinatorFlow: {
+    title: string;
+    coordinatorSrc: string;
+    coordinatorAlt: string;
+    desktopSrc: string;
+    desktopAlt: string;
+    desktopDescription: string;
+    checkSrc: string;
+    checkAlt: string;
+    checkDescription: string;
+    chatSrc: string;
+    chatAlt: string;
+    chatDescription: string;
+  };
+};
+
+const System = ({ system }: { system: System }) => {
   return (
     <div id="system" className="stack">
       <div className="flex flex-wrap stack">
         <h3 className="text-[#2a528a] text-4xl font-serif font-semibold self-center">
-          System at a glance
+          {system.title}
         </h3>
         <div className="stack">
           <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-lg">
-            Patient Flow
+            {system.patientFlow.title}
           </h4>
           <div className="flex flex-wrap justify-start gap-8 mx-auto">
-            <Image src={patient} alt="patient" className="mx-auto" />
+            {/* find correct src and edit en.json to supply that */}
+            <Image
+              src={patient}
+              alt={system.patientFlow.patientAlt}
+              className="mx-auto"
+            />
             <div className="flex flex-col max-w-lg gap-4 grow mx-auto">
               <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4] max-h-20 max-w-prose">
-                <Image src={pill} alt="pill" />
-                <p>Takes medication according to their treatment regimen.</p>
+                <Image src={pill} alt={system.patientFlow.pillAlt} />
+                <p>{system.patientFlow.pillDescription}</p>
               </div>
               <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
-                <Image src={phone} alt="phone" />
-                <p>
-                  Uses patient app to fill out a daily report of their
-                  adherence, symptoms, and mood.
-                </p>
+                <Image src={phone} alt={system.patientFlow.phoneAlt} />
+                <p>{system.patientFlow.phoneDescription}</p>
               </div>
               <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
-                <Image src={test} alt="test" />
-                <p>
-                  Takes metabolite test when app asks them to and submits photo
-                  of test results.
-                </p>
+                <Image src={test} alt={system.patientFlow.testAlt} />
+                <p>{system.patientFlow.testDescription}</p>
               </div>
             </div>
           </div>
         </div>
         <div className="stack">
           <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-lg">
-            Treatment Supporter Flow
+            {system.coordinatorFlow.title}
           </h4>
           <div className="flex flex-wrap justify-start gap-8 mx-auto">
-            <Image src={coordinator} alt="coordinator" className="mx-auto" />
+            <Image
+              src={coordinator}
+              alt={system.coordinatorFlow.title}
+              className="mx-auto"
+            />
             <div className="flex flex-col max-w-lg gap-4 grow mx-auto">
               <div className="flex flex-col max-w-lg gap-4 grow mx-auto">
                 <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]  max-w-prose">
-                  <Image src={desktop} alt="dekstop version of the app" />
-                  <p>
-                    Monitors overall progress of their cohort of patients using
-                    coordinator app.
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
-                  <Image src={check} alt="checking off a patient report" />
-                  <p>
-                    Uses patient app to fill out a daily report of their
-                    adherence, symptoms, and mood.
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
                   <Image
-                    src={chat}
-                    alt="messaging between patient and practitioner"
+                    src={desktop}
+                    alt={system.coordinatorFlow.desktopAlt}
                   />
-                  <p>
-                    Takes metabolite test when app asks them to and submits
-                    photo of test results.
-                  </p>
+                  <p>{system.coordinatorFlow.desktopDescription}</p>
+                </div>
+                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
+                  <Image src={check} alt={system.coordinatorFlow.checkAlt} />
+                  <p>{system.coordinatorFlow.checkDescription}</p>
+                </div>
+                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
+                  <Image src={chat} alt={system.coordinatorFlow.chatAlt} />
+                  <p>{system.coordinatorFlow.chatDescription}</p>
                 </div>
               </div>
             </div>
@@ -169,57 +187,109 @@ const System = () => {
   );
 };
 
-const Solution = () => {
+type Solution = {
+  title: string;
+  subtitle: string;
+  subtitleAside: string;
+};
+
+const Solution = ({ solutions }: { solutions: Solution }) => {
   return (
     <div id="solution flex flex-col justify-center items-center">
       <div className="stack bg-[#7da9f8] border-[#2a528a] border-solid border-4 p-4 rounded-md text-[#003587] max-w-prose mx-auto">
-        <h3 className="font-bold text-3xl">OUR SOLUTION</h3>
+        <h3 className="font-bold text-3xl">{solutions.title}</h3>
         <p className="text-lg">
-          The Treatment Companion system allows trained coordinators to provide
-          regular support to patients and ultimately aims to{" "}
-          <span className="font-bold text-xl ">
-            increase rates of treatment success.
-          </span>
+          {solutions.subtitle}
+          <span className="font-bold text-xl ">{solutions.subtitleAside}</span>
         </p>
       </div>
     </div>
   );
 };
 
-const Problems = () => {
+// I could make this an array of objects when I'm drying out the component below
+type Problem = {
+  issue: {
+    title: string;
+    aside: string;
+    bodyArr: string[];
+    facts: {
+      main: string;
+      sub: string;
+    }[];
+  };
+  existingTreatments: {
+    title: string;
+    aside: string;
+    bodyArr: string[];
+    facts: {
+      main: string;
+      sub: string;
+    }[];
+  };
+};
+
+const Problems = ({ problems }: { problems: Problem }) => {
   return (
     <div id="problems" className="stack bg-white p-4 rounded-md">
       <div className="flex flex-wrap items-end gap-4">
         <div className="stack text-[#2a528a] max-w-prose">
-          <h3 className="text-[#4285f4b3] font-bold text-2xl">THE ISSUE</h3>
+          <h3 className="text-[#4285f4b3] font-bold text-2xl">
+            {problems.issue.title}
+          </h3>
           <aside className="border-l-8 border-[#4285f4] border-solid text-2xl font-semibold text-[#2a528a] pl-4">
-            Tuberculosis (TB) remains a major global public health problem.
+            {problems.issue.aside}
           </aside>
-          <p>
-            Despite TB being largely curable, we still see millions of
-            preventable deaths each year due to the disease.
-          </p>
-          <p>
-            Adherence to a treatment regimen is critical for TB patients, but
-            obstacles such as treatment length, social stigma, and poverty often
-            get in the way of successful treatment.
-          </p>
+          {problems.issue.bodyArr.map((body: string, i) => (
+            <p key={i}>{body}</p>
+          ))}
         </div>
         <div className="flex flex-col grow justify-end items-center border-solid border-2 border-[#4285f4] rounded-md p-4 max-w-prose mx-auto">
-          <p className="text-lg text-[#000000b3] font-light flex flex-col stack">
-            <span className="text-6xl text-[#7da9f8] font-serif">
-              1.7 billion
-            </span>
-            <span> people are infected with latent TB</span>
-          </p>
-          <p className="text-lg text-[#000000b3] font-light flex flex-col stack">
-            <span className="text-6xl text-[#7da9f8] font-serif">~4100</span>{" "}
-            <span> TB-related deaths per day in 2018</span>
-          </p>
+          {problems.issue.facts.map(
+            (fact: { main: string; sub: string }, i) => (
+              <p
+                key={i}
+                className="text-lg text-[#000000b3] font-light flex flex-col stack"
+              >
+                <span className="text-6xl text-[#7da9f8] font-serif">
+                  {fact.main}
+                </span>{" "}
+                <span>{fact.sub}</span>
+              </p>
+            )
+          )}
         </div>
       </div>
       <hr />
       <div className="flex flex-wrap items-end gap-4">
+        <div className="stack text-[#2a528a] max-w-prose">
+          <h3 className="text-[#4285f4b3] font-bold text-2xl">
+            {problems.existingTreatments.title}
+          </h3>
+          <aside className="border-l-8 border-[#4285f4] border-solid text-2xl font-semibold text-[#2a528a] pl-4">
+            {problems.existingTreatments.aside}
+          </aside>
+          {problems.existingTreatments.bodyArr.map((body: string, i) => (
+            <p key={i}>{body}</p>
+          ))}
+        </div>
+        <div className="flex flex-col grow justify-end items-center border-solid border-2 border-[#4285f4] rounded-md p-4 max-w-prose mx-auto">
+          {problems.existingTreatments.facts.map(
+            (fact: { main: string; sub: string }, i) => (
+              <p
+                key={i}
+                className="text-lg text-[#000000b3] font-light flex flex-col stack"
+              >
+                <span className="text-6xl text-[#7da9f8] font-serif">
+                  {fact.main}
+                </span>{" "}
+                <span>{fact.sub}</span>
+              </p>
+            )
+          )}
+        </div>
+      </div>
+      {/* <div className="flex flex-wrap items-end gap-4">
         <div className="stack text-[#2a528a] max-w-prose">
           <h3 className="text-[#4285f4b3] font-bold text-2xl">
             EXISTING TREATMENTS
@@ -251,7 +321,7 @@ const Problems = () => {
             </span>
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -27,7 +27,8 @@ export default async function Page({
         <p>{about.description}</p>
         {}
       </div>
-      <Contact />
+      {/* @ts-expect-error */}
+      <Contact contact={dictionary.general.contact} />
     </>
   );
 }

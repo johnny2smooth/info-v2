@@ -1,10 +1,16 @@
 {
   "title": "hello",
   "home": {
-    "title": "home",
-    "subtitle": "subtitle",
+    "title": "Treatment Companion",
+    "subtitle": "An adaptable solution helping improve the treatment process for tuberculosis patients worldwide.",
     "description": "description",
+    "deployed": {
+      "title": "Currently Deployed For Clinical Trials In:",
+      "argentina": "Argentina",
+      "indonesia": "Indonesia"
+    },
     "keywords": ["1"],
+    "imageAlt": "imageAlt",
     "banner": "banner",
     "bodyArr": ["1"]
   },
@@ -132,6 +138,80 @@
       "organization": "Your Organization",
       "organizationPlaceholder": "University of Washington",
       "contact": "Contact Us"
+    },
+    "system": {
+      "title": "System at a glance",
+      "patientFlow": {
+        "title": "Patient Flow",
+        "patientSrc": "patient",
+        "patientAlt": "Patient",
+        "pillSrc": "pill",
+        "pillAlt": "Pill",
+        "pillDescription": "Takes medication according to their treatment regimen.",
+        "phoneSrc": "phone",
+        "phoneAlt": "Phone",
+        "phoneDescription": "Uses patient app to fill out a daily report of their adherence, symptoms, and mood.",
+        "testSrc": "test",
+        "testAlt": "Test",
+        "testDescription": "Takes metabolite test when app asks them to and submits photo of test results."
+      },
+      "coordinatorFlow": {
+        "title": "Treatment Supporter Flow",
+        "coordinatorSrc": "coordinator",
+        "coordinatorAlt": "Coordinator",
+        "desktopSrc": "desktop",
+        "desktopAlt": "Desktop",
+        "desktopDescription": "Monitors overall progress of their cohort of patients using coordinator app.",
+        "checkSrc": "check",
+        "checkAlt": "Check",
+        "checkDescription": "Uses patient app to fill out a daily report of their adherence, symptoms, and mood.",
+        "chatSrc": "chat",
+        "chatAlt": "Chat",
+        "chatDescription": "Takes metabolite test when app asks them to and submits photo of test results."
+      }
+    },
+    "solutions": {
+      "title": "OUR SOLUTION",
+      "subtitle": "The Treatment Companion system allows trained coordinators to provide regular support to patients and ultimately aims to",
+      "subtitleAside": "increase rates of treatment success."
+    },
+    "problems": {
+      "issue": {
+        "title": "THE ISSUE",
+        "aside": "Tuberculosis (TB) remains a major global public health problem.",
+        "bodyArr": [
+          "Despite TB being largely curable, we still see millions of preventable deaths each year due to the disease.",
+          "Adherence to a treatment regimen is critical for TB patients, but obstacles such as treatment length, social stigma, and poverty often get in the way of successful treatment."
+        ],
+        "facts": [
+          {
+            "main": "1.7 billion",
+            "sub": "people are infected with latent TB"
+          },
+          {
+            "main": "~4100",
+            "sub": "TB-related deaths per day in 2018"
+          }
+        ]
+      },
+      "existingTreatments": {
+        "title": "EXISTING TREATMENTS",
+        "aside": "Current TB treatments fail to reach their full potential.",
+        "bodyArr": [
+          "The World Health Organization currently recommends the DOTS (Directly Observed Treatment, Short-Course) treatment strategy, where patients are observed while taking their medication. Despite the adoption of DOTS, however, TB case rates in many countries are either stagnant or decreasing more slowly than expected.",
+          "New patient-centered strategies are needed in order to drive long-term improvement in TB treatment outcomes."
+        ],
+        "facts": [
+          {
+            "main": "45%",
+            "sub": "of new TB cases lost to follow-up"
+          },
+          {
+            "main": "10 years",
+            "sub": "without any significant improvement in TB treatment success rate"
+          }
+        ]
+      }
     }
   }
 }
