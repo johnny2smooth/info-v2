@@ -1,12 +1,20 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import home from "../../public/home.png";
+import { getDictionary } from "@/get-dictionary";
+import { Locale } from "@/i18n-config";
 
 import { Contact, System, Solution, Problems } from "./general";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default async function Home({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const dictionary = await getDictionary(lang);
+
   return (
     <main className="stack">
       <div id="intro" className="flex flex-wrap stack">
@@ -28,7 +36,8 @@ export default function Home() {
         <Problems />
         <Solution />
         <System />
-        <Contact />
+        {/* @ts-expect-error */}
+        <Contact contact={dictionary.general.contact} />
       </div>
     </main>
   );

@@ -26,28 +26,30 @@
     ]
   },
   "methods": {
-    "title": "title",
-    "subtitle": "subtitle",
-    "description": "description",
+    "title": "Methods",
+    "subtitle": "Our Leading Principles",
+    "description": "A nice little section that describes how we do what we do. What are our core beliefs that enable us to create impactful products",
     "keywords": ["1"],
     "banner": "banner",
     "bodyArr": ["1"]
   },
   "testamonials": {
-    "title": "title",
-    "subtitle": "subtitle",
-    "description": "description",
+    "title": "Testamonials",
+    "subtitle": "What our users are saying",
+    "description": "A lot of the work that we have done has been for our users. We have gathered a lot of feedback from them and we are proud to share some of it with you.",
     "keywords": ["1"],
     "banner": "banner",
     "bodyArr": ["1"]
   },
   "contact": {
-    "title": "contact",
-    "subtitle": "subtitle",
-    "description": "description",
+    "title": "Get in touch",
+    "subtitle": "We are hiring!",
+    "description": "What we want to talk about...",
     "keywords": ["1"],
     "banner": "banner",
-    "bodyArr": ["1"]
+    "bodyArr": [
+      "We are looking for a X to join our team. If you are interested, please send us an email at..."
+    ]
   },
   "team": {
     "title": "title",
@@ -117,6 +119,19 @@
       "title": "title",
       "subtitle": "subtitle",
       "description": "description"
+    }
+  },
+  "general": {
+    "contact": {
+      "title": "Interested in learning more about our research and approaches?",
+      "required": "Required",
+      "name": "Your Name",
+      "namePlaceholder": "Jimmy Johns",
+      "email": "Your Email",
+      "emailPlaceholder": "me@uw.edu",
+      "organization": "Your Organization",
+      "organizationPlaceholder": "University of Washington",
+      "contact": "Contact Us"
     }
   }
 }

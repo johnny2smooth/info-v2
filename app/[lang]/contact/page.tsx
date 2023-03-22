@@ -1,15 +1,22 @@
+import { getDictionary } from "@/get-dictionary";
 import { Contact } from "../general";
-export default function Page() {
+import { Locale } from "@/i18n-config";
+export default async function Page({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const dictionary = await getDictionary(lang);
+  const { contact } = dictionary;
   return (
     <>
       <div className="p-4 stack">
-        <h2 className="text-[#003587] text-3xl">We are hiring!</h2>
-        <p>
-          We are looking for a X to join our team. If you are interested, please
-          send us an email at...
-        </p>
+        <h2 className="text-[#003587] text-3xl">{contact.title}</h2>
+        <h3 className="text-[#003587] text-3xl">{contact.subtitle}</h3>
+        <p>{contact.description}</p>
       </div>
-      <Contact />
+      {/* @ts-expect-error */}
+      <Contact contact={dictionary.general.contact} />
     </>
   );
 }

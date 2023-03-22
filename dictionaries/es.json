@@ -118,5 +118,18 @@
       "subtitle": "subtitle",
       "description": "description"
     }
+  },
+  "general": {
+    "contact": {
+      "title": "Interested in learning more about our research and approaches?",
+      "required": "Required",
+      "name": "Your Name",
+      "namePlaceholder": "Jimmy Johns",
+      "email": "Your Email",
+      "emailPlaceholder": "me@uw.edu",
+      "organization": "Your Organization",
+      "organizationPlaceholder": "University of Washington",
+      "contact": "Contact Us"
+    }
   }
 }

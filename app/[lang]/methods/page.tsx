@@ -1,15 +1,22 @@
+import { getDictionary } from "@/get-dictionary";
+import { Locale } from "@/i18n-config";
 import { Contact } from "../general";
-export default function Page() {
+export default async function Page({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const dictionary = await getDictionary(lang);
+  const { methods } = dictionary;
   return (
     <>
       <div className="p-4 stack">
-        <h2 className="text-[#003587] text-3xl">Our Leading Principles</h2>
-        <p>
-          A nice little section that describes how we do what we do. What are
-          our core beliefs that enable us to create impactful products
-        </p>
+        <h2 className="text-[#003587] text-3xl">{methods.title}</h2>
+        <h3 className="text-[#003587] text-3xl">{methods.subtitle}</h3>
+        <p>{methods.description}</p>
       </div>
-      <Contact />
+      {/* @ts-expect-error */}
+      <Contact contact={dictionary.general.contact} />
     </>
   );
 }

@@ -8,55 +8,75 @@ import desktop from "../../public/system/desktop.png";
 import check from "../../public/system/check.png";
 import chat from "../../public/system/chat.png";
 
-function Contact() {
+type Contact = {
+  title: string;
+  required: string;
+  name: string;
+  namePlaceholder: string;
+  email: string;
+  emailPlaceholder: string;
+  organization: string;
+  organizationPlaceholder: string;
+  contact: string;
+};
+async function Contact({ contact }: { contact: Contact }) {
+  const {
+    title,
+    required,
+    name,
+    namePlaceholder,
+    email,
+    emailPlaceholder,
+    organization,
+    organizationPlaceholder,
+    contact: contactUs,
+  } = contact;
   return (
     <div
       id="contact"
       className="stack bg-[#4285f4] p-4 rounded-md max-w-prose mx-auto"
     >
-      <h3 className="text-2xl text-[#cce0ffe5] ">
-        Interested in learning more about our research and approaches?
-      </h3>
+      <h3 className="text-2xl text-[#cce0ffe5] ">{title}</h3>
       <form>
         <div className="flex flex-col items-start gap-4">
           <div className="flex flex-col text-lg w-full">
             <label htmlFor="name" className="text-[#cce0ffaa]">
-              Your Name <span className="text-xs">required*</span>
+              {name} <span className="text-xs">{required}*</span>
             </label>
             <input
               className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-md"
               type="text"
               id="name"
               name="name"
-              placeholder="Jemica Stone"
+              placeholder={namePlaceholder}
               autoComplete="name"
               required
             />
           </div>
           <div className="flex flex-col text-lg w-full">
             <label htmlFor="email" className="text-[#cce0ffaa]">
-              Email <span className="text-xs">required*</span>
+              {email} <span className="text-xs">{required}*</span>
             </label>
             <input
               className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-md"
               type="email"
               id="email"
               name="email"
-              placeholder="jemica@uw.edu"
+              placeholder={emailPlaceholder}
               autoComplete="email"
               required
             />
           </div>
           <div className="flex flex-col text-lg w-full">
             <label htmlFor="organization" className="text-[#cce0ffaa]">
-              Organization
+              {organization}
             </label>
             <input
               className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-md"
               type="text"
               id="organization"
               name="organization"
-              placeholder="University of Washington"
+              placeholder={organizationPlaceholder}
             />
           </div>
           <div className="flex self-end">
@@ -64,7 +84,7 @@ function Contact() {
               className="bg-[#cce0ffe5] rounded-md text-[#4285f4] px-2 py-1 text-lg"
               type="submit"
             >
-              Contact us
+              {contactUs}
             </button>
           </div>
         </div>
