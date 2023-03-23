@@ -2,6 +2,7 @@ import { Contact } from "../general";
 import Image from "next/image";
 import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
+import jane from "@/public/team/jane.png";
 
 type TeamMember = {
   firstName: string;
@@ -27,7 +28,6 @@ export default async function Page({
         <p>{about.description}</p>
         {}
       </div>
-      {/* @ts-expect-error */}
       <Contact contact={dictionary.general.contact} />
     </>
   );

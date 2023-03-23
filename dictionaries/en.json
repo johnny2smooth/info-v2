@@ -9,26 +9,73 @@
       "argentina": "Argentina",
       "indonesia": "Indonesia"
     },
-    "keywords": ["1"],
-    "imageAlt": "imageAlt",
-    "banner": "banner",
-    "bodyArr": ["1"]
+    "keywords": [
+      "Tuberculosis",
+      "TB",
+      "Pulmonary tuberculosis",
+      "Extra-pulmonary tuberculosis",
+      "Mycobacterium tuberculosis",
+      "Bacterial infections",
+      "Infectious diseases",
+      "Public health",
+      "Epidemiology",
+      "Immunology",
+      "Molecular biology",
+      "Drug resistance",
+      "Research",
+      "Clinical research",
+      "Medical research",
+      "Clinical trials",
+      "Randomized controlled trials",
+      "University of Washington",
+      "UW Medicine",
+      "School of Medicine",
+      "Digital health"
+    ],
+    "imageAlt": "A healthcare practitoner using the App",
+    "banner": "N/A",
+    "bodyArr": []
   },
   "nav": {
-    "about": "about",
-    "methods": "methods",
-    "testamonials": "testamonials",
-    "contact": "contact",
-    "team": "team"
+    "about": "About",
+    "methods": "Methods",
+    "testamonials": "Testamonials",
+    "contact": "Contact",
+    "team": "Team"
   },
   "about": {
     "title": "Who we are",
     "subtitle": "What we do",
-    "description": "All about our mission + more. What have we learned along the way and where do we see this project in 1 year",
-    "keywords": ["1"],
-    "banner": "banner",
+    "description": "We are a team of researchers and developers at the University of Washington. We are working on a digital health solution to help improve the treatment process for tuberculosis patients worldwide. We are currently working on a pilot study in Indonesia and Argentina.",
+    "keywords": [
+      "Tuberculosis",
+      "TB",
+      "Pulmonary tuberculosis",
+      "Extra-pulmonary tuberculosis",
+      "Mycobacterium tuberculosis",
+      "Bacterial infections",
+      "Infectious diseases",
+      "Public health",
+      "Epidemiology",
+      "Immunology",
+      "Molecular biology",
+      "Drug resistance",
+      "Research",
+      "Clinical research",
+      "Medical research",
+      "Clinical trials",
+      "Randomized controlled trials",
+      "University of Washington",
+      "UW Medicine",
+      "School of Medicine",
+      "Digital health"
+    ],
+    "banner": "N/A",
     "bodyArr": [
-      "All about our mission + more. What have we learned along the way and where do we see this project in 1 year"
+      "Why we are the proper team to do this",
+      "What we have done so far",
+      "What we are doing now",
+      "What we want to do in the future"
     ]
   },
   "methods": {
