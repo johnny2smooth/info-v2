@@ -52,7 +52,7 @@ export default function Nav({
         aria-hidden="false"
         className="flex justify-center items-center max-w-5xl"
       >
-        <Link href={`/`} className={`s4 text-[#4969ed]`}>
+        <Link href={`/${lang}`} className={`s4 text-[#4969ed]`}>
           <Image
             src="/logo.png"
             alt="treatment companion"

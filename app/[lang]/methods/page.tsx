@@ -15,7 +15,6 @@ export default async function Page({
         <h3 className="text-[#003587] text-3xl">{methods.subtitle}</h3>
         <p>{methods.description}</p>
       </div>
-      {/* @ts-expect-error */}
       <Contact contact={dictionary.general.contact} />
     </>
   );
