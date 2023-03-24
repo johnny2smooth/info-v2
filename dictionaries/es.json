@@ -1,11 +1,11 @@
 {
   "title": "hello",
   "home": {
-    "title": "home",
-    "subtitle": "subtitle",
-    "description": "description",
+    "title": "Compañero de Tratamiento",
+    "subtitle": "Una solución adaptable que ayuda a mejorar el proceso de tratamiento para pacientes con tuberculosis en todo el mundo.",
+    "description": "descripción",
     "deployed": {
-      "title": "Currently Deployed For Clinical Trials In:",
+      "title": "Actualmente desplegado para ensayos clínicos en:",
       "argentina": "Argentina",
       "indonesia": "Indonesia"
     },
@@ -15,11 +15,11 @@
     "bodyArr": ["1"]
   },
   "nav": {
-    "about": "about",
-    "methods": "methods",
-    "testamonials": "testamonials",
-    "contact": "contact",
-    "team": "team"
+    "about": "Acerca de",
+    "methods": "Métodos",
+    "testimonials": "Testimonios",
+    "contact": "Contacto",
+    "team": "Equipo"
   },
   "about": {
     "title": "Who we are",
@@ -138,75 +138,75 @@
       "contact": "Contact Us"
     },
     "system": {
-      "title": "System at a glance",
+      "title": "Sistema a simple vista",
       "patientFlow": {
-        "title": "Patient Flow",
+        "title": "Flujo de pacientes",
         "patientSrc": "patient",
-        "patientAlt": "Patient",
+        "patientAlt": "Paciente",
         "pillSrc": "pill",
-        "pillAlt": "Pill",
-        "pillDescription": "Takes medication according to their treatment regimen.",
+        "pillAlt": "Píldora",
+        "pillDescription": "Toma medicación según su régimen de tratamiento.",
         "phoneSrc": "phone",
-        "phoneAlt": "Phone",
-        "phoneDescription": "Uses patient app to fill out a daily report of their adherence, symptoms, and mood.",
+        "phoneAlt": "Teléfono",
+        "phoneDescription": "Utiliza la aplicación para pacientes para completar un informe diario de su adherencia, síntomas y estado de ánimo.",
         "testSrc": "test",
-        "testAlt": "Test",
-        "testDescription": "Takes metabolite test when app asks them to and submits photo of test results."
+        "testAlt": "Prueba",
+        "testDescription": "Realiza la prueba de metabolitos cuando la aplicación se lo solicita y envía una foto de los resultados de la prueba."
       },
       "coordinatorFlow": {
-        "title": "Treatment Supporter Flow",
+        "title": "Flujo del coordinador de tratamiento",
         "coordinatorSrc": "coordinator",
-        "coordinatorAlt": "Coordinator",
+        "coordinatorAlt": "Coordinador",
         "desktopSrc": "desktop",
-        "desktopAlt": "Desktop",
-        "desktopDescription": "Monitors overall progress of their cohort of patients using coordinator app.",
+        "desktopAlt": "Escritorio",
+        "desktopDescription": "Supervisa el progreso general de su grupo de pacientes utilizando la aplicación de coordinador.",
         "checkSrc": "check",
-        "checkAlt": "Check",
-        "checkDescription": "Uses patient app to fill out a daily report of their adherence, symptoms, and mood.",
+        "checkAlt": "Verificación",
+        "checkDescription": "Utiliza la aplicación para pacientes para completar un informe diario de su adherencia, síntomas y estado de ánimo.",
         "chatSrc": "chat",
         "chatAlt": "Chat",
-        "chatDescription": "Takes metabolite test when app asks them to and submits photo of test results."
+        "chatDescription": "Realiza la prueba de metabolitos cuando la aplicación se lo solicita y envía una foto de los resultados de la prueba."
       }
     },
     "solutions": {
-      "title": "OUR SOLUTION",
-      "subtitle": "The Treatment Companion system allows trained coordinators to provide regular support to patients and ultimately aims to",
-      "subtitleAside": "increase rates of treatment success."
+      "title": "NUESTRA SOLUCIÓN",
+      "subtitle": "El sistema de Compañero de Tratamiento permite a los coordinadores capacitados brindar apoyo regular a los pacientes y, en última instancia, tiene como objetivo",
+      "subtitleAside": "aumentar las tasas de éxito en el tratamiento."
     },
     "problems": {
       "issue": {
-        "title": "THE ISSUE IN SPANISH",
-        "aside": "Tuberculosis (TB) remains a major global public health problem.",
+        "title": "EL PROBLEMA",
+        "aside": "La tuberculosis (TB) sigue siendo un problema importante de salud pública a nivel mundial.",
         "bodyArr": [
-          "Despite TB being largely curable, we still see millions of preventable deaths each year due to the disease.",
-          "Adherence to a treatment regimen is critical for TB patients, but obstacles such as treatment length, social stigma, and poverty often get in the way of successful treatment."
+          "A pesar de que la TB es en gran medida curable, aún vemos millones de muertes prevenibles cada año debido a la enfermedad.",
+          "La adherencia a un régimen de tratamiento es fundamental para los pacientes con TB, pero obstáculos como la duración del tratamiento, el estigma social y la pobreza a menudo dificultan el éxito del tratamiento."
         ],
         "facts": [
           {
-            "main": "1.7 billion",
-            "sub": "people are infected with latent TB"
+            "main": "1,7 mil millones",
+            "sub": "personas están infectadas con TB latente"
           },
           {
             "main": "~4100",
-            "sub": "TB-related deaths per day in 2018"
+            "sub": "muertes relacionadas con la TB por día en 2018"
           }
         ]
       },
       "existingTreatments": {
-        "title": "EXISTING TREATMENTS",
-        "aside": "Current TB treatments fail to reach their full potential.",
+        "title": "TRATAMIENTOS EXISTENTES",
+        "aside": "Los tratamientos actuales para la TB no alcanzan su máximo potencial.",
         "bodyArr": [
-          "The World Health Organization currently recommends the DOTS (Directly Observed Treatment, Short-Course) treatment strategy, where patients are observed while taking their medication. Despite the adoption of DOTS, however, TB case rates in many countries are either stagnant or decreasing more slowly than expected.",
-          "New patient-centered strategies are needed in order to drive long-term improvement in TB treatment outcomes."
+          "La Organización Mundial de la Salud actualmente recomienda la estrategia de tratamiento DOTS (Tratamiento Directamente Observado y de Corta Duración), donde los pacientes son observados mientras toman su medicación. Sin embargo, a pesar de la adopción de DOTS, las tasas de casos de TB en muchos países son estancadas o disminuyen más lentamente de lo esperado.",
+          "Se necesitan nuevas estrategias centradas en el paciente para impulsar una mejora a largo plazo en los resultados del tratamiento de la TB."
         ],
         "facts": [
           {
             "main": "45%",
-            "sub": "of new TB cases lost to follow-up"
+            "sub": "de los nuevos casos de TB se pierden en el seguimiento"
           },
           {
-            "main": "10 years",
-            "sub": "without any significant improvement in TB treatment success rate"
+            "main": "10 años",
+            "sub": "sin ninguna mejora significativa en la tasa de éxito del tratamiento de la TB"
           }
         ]
       }

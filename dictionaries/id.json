@@ -1,11 +1,11 @@
 {
   "title": "hello",
   "home": {
-    "title": "home",
-    "subtitle": "subtitle",
-    "description": "description",
+    "title": "Treatment Companion",
+    "subtitle": "Solusi yang dapat disesuaikan untuk membantu meningkatkan proses pengobatan bagi pasien tuberkulosis di seluruh dunia.",
+    "description": "deskripsi",
     "deployed": {
-      "title": "Currently Deployed For Clinical Trials In:",
+      "title": "Saat ini Diterapkan untuk Uji Klinis di:",
       "argentina": "Argentina",
       "indonesia": "Indonesia"
     },
@@ -15,11 +15,11 @@
     "bodyArr": ["1"]
   },
   "nav": {
-    "about": "about",
-    "methods": "methods",
-    "testamonials": "testamonials",
-    "contact": "contact",
-    "team": "team"
+    "about": "Tentang",
+    "methods": "Metode",
+    "testimonials": "Testimoni",
+    "contact": "Kontak",
+    "team": "Tim"
   },
   "about": {
     "title": "Who we are",
@@ -138,75 +138,75 @@
       "contact": "Contact Us"
     },
     "system": {
-      "title": "System at a glance",
+      "title": "Sistem dalam sekilas",
       "patientFlow": {
-        "title": "Patient Flow",
+        "title": "Aliran Pasien",
         "patientSrc": "patient",
-        "patientAlt": "Patient",
+        "patientAlt": "Pasien",
         "pillSrc": "pill",
-        "pillAlt": "Pill",
-        "pillDescription": "Takes medication according to their treatment regimen.",
+        "pillAlt": "Pil",
+        "pillDescription": "Mengonsumsi obat sesuai dengan rejimen pengobatan mereka.",
         "phoneSrc": "phone",
-        "phoneAlt": "Phone",
-        "phoneDescription": "Uses patient app to fill out a daily report of their adherence, symptoms, and mood.",
+        "phoneAlt": "Telepon",
+        "phoneDescription": "Menggunakan aplikasi pasien untuk mengisi laporan harian kepatuhan, gejala, dan suasana hati mereka.",
         "testSrc": "test",
-        "testAlt": "Test",
-        "testDescription": "Takes metabolite test when app asks them to and submits photo of test results."
+        "testAlt": "Tes",
+        "testDescription": "Melakukan tes metabolit ketika aplikasi memintanya dan mengirimkan foto hasil tes."
       },
       "coordinatorFlow": {
-        "title": "Treatment Supporter Flow",
+        "title": "Aliran Pendukung Pengobatan",
         "coordinatorSrc": "coordinator",
-        "coordinatorAlt": "Coordinator",
+        "coordinatorAlt": "Koordinator",
         "desktopSrc": "desktop",
         "desktopAlt": "Desktop",
-        "desktopDescription": "Monitors overall progress of their cohort of patients using coordinator app.",
+        "desktopDescription": "Memonitor kemajuan keseluruhan dari kelompok pasien mereka menggunakan aplikasi koordinator.",
         "checkSrc": "check",
-        "checkAlt": "Check",
-        "checkDescription": "Uses patient app to fill out a daily report of their adherence, symptoms, and mood.",
+        "checkAlt": "Periksa",
+        "checkDescription": "Menggunakan aplikasi pasien untuk mengisi laporan harian kepatuhan, gejala, dan suasana hati mereka.",
         "chatSrc": "chat",
-        "chatAlt": "Chat",
-        "chatDescription": "Takes metabolite test when app asks them to and submits photo of test results."
+        "chatAlt": "Obrolan",
+        "chatDescription": "Melakukan tes metabolit ketika aplikasi memintanya dan mengirimkan foto hasil tes."
       }
     },
     "solutions": {
-      "title": "OUR SOLUTION",
-      "subtitle": "The Treatment Companion system allows trained coordinators to provide regular support to patients and ultimately aims to",
-      "subtitleAside": "increase rates of treatment success."
+      "title": "SOLUSI KAMI",
+      "subtitle": "Sistem Treatment Companion memungkinkan koordinator yang terlatih untuk memberikan dukungan rutin kepada pasien dan pada akhirnya bertujuan untuk",
+      "subtitleAside": "meningkatkan tingkat keberhasilan pengobatan."
     },
     "problems": {
       "issue": {
-        "title": "THE ISSUE",
-        "aside": "Tuberculosis (TB) remains a major global public health problem.",
+        "title": "MASALAH",
+        "aside": "Tuberkulosis (TB) masih menjadi masalah kesehatan masyarakat global yang utama.",
         "bodyArr": [
-          "Despite TB being largely curable, we still see millions of preventable deaths each year due to the disease.",
-          "Adherence to a treatment regimen is critical for TB patients, but obstacles such as treatment length, social stigma, and poverty often get in the way of successful treatment."
+          "Meskipun TB sebagian besar dapat disembuhkan, kita masih melihat jutaan kematian yang dapat dicegah setiap tahun akibat penyakit ini.",
+          "Kepatuhan terhadap rejimen pengobatan sangat penting bagi pasien TB, tetapi hambatan seperti durasi pengobatan, stigma sosial, dan kemiskinan seringkali menghalangi keberhasilan pengobatan."
         ],
         "facts": [
           {
-            "main": "1.7 billion",
-            "sub": "people are infected with latent TB"
+            "main": "1,7 miliar",
+            "sub": "orang terinfeksi TB laten"
           },
           {
             "main": "~4100",
-            "sub": "TB-related deaths per day in 2018"
+            "sub": "kematian terkait TB per hari pada tahun 2018"
           }
         ]
       },
       "existingTreatments": {
-        "title": "EXISTING TREATMENTS",
-        "aside": "Current TB treatments fail to reach their full potential.",
+        "title": "PENGOBATAN YANG ADA",
+        "aside": "Pengobatan TB saat ini gagal mencapai potensi penuh mereka.",
         "bodyArr": [
-          "The World Health Organization currently recommends the DOTS (Directly Observed Treatment, Short-Course) treatment strategy, where patients are observed while taking their medication. Despite the adoption of DOTS, however, TB case rates in many countries are either stagnant or decreasing more slowly than expected.",
-          "New patient-centered strategies are needed in order to drive long-term improvement in TB treatment outcomes."
+          "Organisasi Kesehatan Dunia saat ini merekomendasikan strategi pengobatan DOTS (Directly Observed Treatment, Short-Course), di mana pasien diawasi saat mengonsumsi obat mereka. Namun, meskipun penerapan DOTS, angka kasus TB di banyak negara tetap stagnan atau menurun lebih lambat dari yang diharapkan.",
+          "Strategi baru yang berfokus pada pasien diperlukan untuk mendorong perbaikan jangka panjang dalam hasil pengobatan TB."
         ],
         "facts": [
           {
             "main": "45%",
-            "sub": "of new TB cases lost to follow-up"
+            "sub": "kasus TB baru yang hilang dalam tindak lanjut"
           },
           {
-            "main": "10 years",
-            "sub": "without any significant improvement in TB treatment success rate"
+            "main": "10 tahun",
+            "sub": "tanpa peningkatan yang signifikan dalam tingkat keberhasilan pengobatan TB"
           }
         ]
       }

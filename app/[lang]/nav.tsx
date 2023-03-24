@@ -12,11 +12,11 @@ export default function Nav({
   translations,
 }: {
   lang: Locale;
-  endpoints: ["about", "methods", "testamonials", "contact", "team"];
+  endpoints: ["about", "methods", "testimonials", "contact", "team"];
   translations: {
     about: string;
     methods: string;
-    testamonials: string;
+    testimonials: string;
     contact: string;
     team: string;
   };

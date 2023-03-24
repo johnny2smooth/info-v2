@@ -34,12 +34,12 @@
     ],
     "imageAlt": "A healthcare practitoner using the App",
     "banner": "N/A",
-    "bodyArr": []
+    "bodyArr": ["N/A"]
   },
   "nav": {
     "about": "About",
     "methods": "Methods",
-    "testamonials": "Testamonials",
+    "testimonials": "Testimonials",
     "contact": "Contact",
     "team": "Team"
   },
@@ -51,7 +51,6 @@
       "Tuberculosis",
       "TB",
       "Pulmonary tuberculosis",
-      "Extra-pulmonary tuberculosis",
       "Mycobacterium tuberculosis",
       "Bacterial infections",
       "Infectious diseases",
@@ -82,32 +81,59 @@
     "title": "Methods",
     "subtitle": "Our Leading Principles",
     "description": "A nice little section that describes how we do what we do. What are our core beliefs that enable us to create impactful products",
-    "keywords": ["1"],
-    "banner": "banner",
-    "bodyArr": ["1"]
+    "keywords": [
+      "Design Thinking",
+      "User-Centered Design",
+      "Agile Development",
+      "Research",
+      "Iteration",
+      "Prototyping",
+      "Testing",
+      "Feedback"
+    ],
+    "banner": "N/A",
+    "bodyArr": ["N/A"]
   },
   "testamonials": {
     "title": "Testamonials",
     "subtitle": "What our users are saying",
     "description": "A lot of the work that we have done has been for our users. We have gathered a lot of feedback from them and we are proud to share some of it with you.",
-    "keywords": ["1"],
-    "banner": "banner",
-    "bodyArr": ["1"]
+    "keywords": [
+      "Design Thinking",
+      "User-Centered Design",
+      "Agile Development",
+      "Research",
+      "Iteration",
+      "Prototyping",
+      "Testing",
+      "Feedback"
+    ],
+    "banner": "N/A",
+    "bodyArr": ["N/A"]
   },
   "contact": {
     "title": "Get in touch",
     "subtitle": "We are hiring!",
     "description": "What we want to talk about...",
-    "keywords": ["1"],
-    "banner": "banner",
+    "keywords": [
+      "Design Thinking",
+      "User-Centered Design",
+      "Agile Development",
+      "Research",
+      "Iteration",
+      "Prototyping",
+      "Testing",
+      "Feedback"
+    ],
+    "banner": "N/A",
     "bodyArr": [
       "We are looking for a X to join our team. If you are interested, please send us an email at..."
     ]
   },
   "team": {
-    "title": "title",
-    "subtitle": "subtitle",
-    "description": "description",
+    "title": "Our Team",
+    "subtitle": "An interdisciplinary team of researchers and developers. We are passionate about improving the lives of people around the world who are infected with TB. We are currently working on a pilot study in Indonesia and Argentina.",
+    "description": "How much time we have been at it. Why we are the right ones for the job. What we have done so far. What we are doing now. What we want to do in the future. Next steps?",
     "keywords": ["1"],
     "banner": "banner",
     "bodyArr": ["1"],
@@ -143,10 +169,9 @@
     ]
   },
   "footer": {
-    "title": "title",
-    "subtitle": "subtitle",
+    "title": "Footer Title",
+    "subtitle": "Footer Subtitle",
     "description": "description",
-    "keywords": ["1"],
     "banner": "banner",
     "bodyArr": ["1"]
   },

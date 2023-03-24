@@ -136,7 +136,7 @@ const System = ({ system }: { system: System }) => {
               className="mx-auto"
             />
             <div className="flex flex-col max-w-lg gap-4 grow mx-auto">
-              <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4] max-h-20 max-w-prose">
+              <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4] max-w-prose">
                 <Image src={pill} alt={system.patientFlow.pillAlt} />
                 <p>{system.patientFlow.pillDescription}</p>
               </div>
