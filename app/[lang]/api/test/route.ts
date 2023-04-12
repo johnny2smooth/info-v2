@@ -11,15 +11,15 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
-  const body = await request.json();
+  const { name, email, organization } = await request.json();
 
-  console.log(body);
+  console.log(name);
 
-  const { error } = await supabase.from("prospects").insert({
-    name: "funky!",
-    email: "posted@posted",
-    organization: "wow",
+  const { data, error } = await supabase.from("prospects").insert({
+    name,
+    email,
+    organization,
   });
 
-  return NextResponse.json({ error });
+  return NextResponse.json({ data, error });
 }

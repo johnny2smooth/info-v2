@@ -4,7 +4,8 @@ import home from "../../public/home.png";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 
-import { Contact, System, Solution, Problems } from "./general";
+import { System, Solution, Problems } from "./general";
+import ContactForm from "./contact-form";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +34,7 @@ export default async function Home({
         <Problems problems={dictionary.general.problems} />
         <Solution solutions={dictionary.general.solutions} />
         <System system={dictionary.general.system} />
-        <Contact contact={dictionary.general.contact} />
+        <ContactForm contact={dictionary.general.contact} />
       </div>
     </main>
   );
