@@ -1,5 +1,6 @@
 "use client";
 
+import { Locale } from "@/i18n-config";
 import { FormEvent } from "react";
 
 type Contact = {
@@ -14,23 +15,33 @@ type Contact = {
   contact: string;
 };
 
-export default function ContactForm({ contact }: { contact: Contact }) {
+export default function ContactForm({
+  contact,
+  lang,
+}: {
+  contact: Contact;
+  lang: Locale;
+}) {
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    let form = e.target as HTMLFormElement;
-    let formData = new FormData(form);
 
-    let response = await fetch("en/api/hello", {
+    let form = e.target as HTMLFormElement;
+
+    let formData = new FormData(form);
+    console.log(Object.fromEntries(formData.entries()));
+
+    let response = await fetch(`/${lang}/api/hello`, {
       method: "POST",
       body: JSON.stringify({
-        name: "john",
-        email: "jbp13@uw.edu",
-        organisation: "wework",
+        ...Object.fromEntries(formData.entries()),
+        lang,
       }),
     });
-    let { error } = await response.json();
 
-    console.log(error);
+    let { error } = await response.json();
+    if (error) {
+      throw new Error(error);
+    }
   }
 
   return (

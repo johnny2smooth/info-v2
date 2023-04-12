@@ -34,7 +34,7 @@ export default async function Home({
         <Problems problems={dictionary.general.problems} />
         <Solution solutions={dictionary.general.solutions} />
         <System system={dictionary.general.system} />
-        <ContactForm contact={dictionary.general.contact} />
+        <ContactForm contact={dictionary.general.contact} lang={lang} />
       </div>
     </main>
   );
