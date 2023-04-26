@@ -12,14 +12,12 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
   const { name, email, organization, lang } = await request.json();
-  // console.log(lang);
   const { error } = await supabase.from("prospects").insert({
     name,
     email,
     organization,
     locale: lang,
   });
-  console.log(error);
 
   return NextResponse.json({ error });
 }

@@ -204,9 +204,9 @@
       "title": "Interested in learning more about our research and approaches?",
       "required": "Required",
       "name": "Your Name",
-      "namePlaceholder": "Jimmy Johns",
+      "namePlaceholder": "Alfie Vidrio",
       "email": "Your Email",
-      "emailPlaceholder": "me@uw.edu",
+      "emailPlaceholder": "avid-rio@uw.edu",
       "organization": "Your Organization",
       "organizationPlaceholder": "University of Washington",
       "contact": "Contact Us"
