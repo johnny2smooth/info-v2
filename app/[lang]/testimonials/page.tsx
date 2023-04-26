@@ -7,13 +7,13 @@ export default async function Page({
   params: { lang: Locale };
 }) {
   const dictionary = await getDictionary(lang);
-  const { testamonials } = dictionary;
+  const { testimonials } = dictionary;
   return (
     <>
       <div className="p-4 stack">
-        <h2 className="text-[#003587] text-3xl">{testamonials.title}</h2>
-        <h3 className="text-[#003587] text-3xl">{testamonials.subtitle}</h3>
-        <p>{testamonials.description}</p>
+        <h2 className="text-[#003587] text-3xl">{testimonials.title}</h2>
+        <h3 className="text-[#003587] text-3xl">{testimonials.subtitle}</h3>
+        <p>{testimonials.description}</p>
       </div>
       <Contact contact={dictionary.general.contact} />
     </>

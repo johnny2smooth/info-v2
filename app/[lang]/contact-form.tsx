@@ -68,7 +68,7 @@ export default function ContactForm({
             </Link>
             {", "}
             <Link
-              href={`${lang}/testamonials`}
+              href={`${lang}/testimonials`}
               className="underline underline-offset-2"
             >
               Testimonials

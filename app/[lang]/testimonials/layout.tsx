@@ -6,7 +6,7 @@ export async function generateMetadata({
 }: {
   params: { lang: Locale };
 }) {
-  return await metadataGenerator("testamonials", lang);
+  return await metadataGenerator("testimonials", lang);
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
