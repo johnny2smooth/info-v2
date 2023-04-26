@@ -42,7 +42,7 @@ export default function ContactForm({
 
     let { error } = await response.json();
     if (error) {
-      throw new Error(error);
+      setSubmissionStatus("error");
     }
     setSubmissionStatus("submitted");
   }
@@ -52,7 +52,7 @@ export default function ContactForm({
       id="contact"
       className="stack bg-[#4285f4] p-4 rounded-md max-w-prose mx-auto min-h-[200px] transition-all"
     >
-      {submissionStatus && (
+      {submissionStatus === "submitted" && (
         <div className="flex flex-col w-full items-center gap-4 transition-all">
           <h4 className="text-3xl text-white">Thank you!</h4>
           <p className="text-xl text-white">
@@ -80,6 +80,21 @@ export default function ContactForm({
             >
               Methods
             </Link>
+            .
+          </p>
+        </div>
+      )}
+      {submissionStatus === "error" && (
+        <div className="flex flex-col w-full items-center gap-4 transition-all">
+          <h4 className="text-3xl text-white">There was an error!</h4>
+          <p className="text-xl text-white">
+            Please reach out directly to{" "}
+            <a
+              href="mailto:sjiribar@uw.edu"
+              className="underline underline-offset-4"
+            >
+              sjiribar@uw.edu
+            </a>
           </p>
         </div>
       )}

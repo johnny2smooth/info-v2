@@ -25,7 +25,7 @@ export default async function Root({
   const dictionary = await getDictionary(lang);
   return (
     <html lang="en">
-      <body className="p-4 min-h-[100vh] relative bg-gradient-to-br from-[#E8F0FE] to-[#E8F0FE] via-[#98b5ea]">
+      <body className="p-4 min-h-[100vh] relative bg-[#e5eeff]">
         <Nav
           lang={lang}
           endpoints={["about", "methods", "testimonials", "contact", "team"]}
