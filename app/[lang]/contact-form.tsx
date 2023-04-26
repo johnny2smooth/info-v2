@@ -27,7 +27,6 @@ export default function ContactForm({
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    console.log(submissionStatus);
     let form = e.target as HTMLFormElement;
 
     let formData = new FormData(form);
@@ -44,6 +43,7 @@ export default function ContactForm({
     if (error) {
       setSubmissionStatus("error");
     }
+
     setSubmissionStatus("submitted");
   }
 

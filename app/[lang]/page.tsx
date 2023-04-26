@@ -20,8 +20,8 @@ export default async function Home({
     <main className="stack">
       <div id="intro" className="flex flex-wrap stack">
         <div className="flex stack flex-col items-center mx-auto max-w-prose">
-          <h2 className="text-[#2a528a]">{dictionary.home.title}</h2>
-          <h3 className="text-[#003587] text-3xl">
+          <h2 className="text-[#2a528a] text-4xl">{dictionary.home.title}</h2>
+          <h3 className="text-[#003587] text-2xl">
             {dictionary.home.subtitle}
           </h3>
           <div className="bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-xl border-[#4285f4] border-2 border-solid flex flex-col">

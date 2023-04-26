@@ -51,11 +51,8 @@ export default function Nav({
   }, [isOpen]);
 
   return (
-    <header className="relative w-full flex justify-start items-center gap-4 mb-10 border-b-2 border-solid border-[#4285f4]">
-      <div
-        aria-hidden="false"
-        className="flex justify-center items-center max-w-5xl"
-      >
+    <header className="max-w-5xl mx-auto relative w-full flex justify-start items-center gap-4 mb-10 border-b-2 border-solid border-[#4285f4]">
+      <div aria-hidden="false" className="flex justify-center items-center">
         <Link href={`/${lang}`} className={`s4 text-[#4969ed]`}>
           <Image
             src="/logo.png"
@@ -65,11 +62,7 @@ export default function Nav({
           />
         </Link>
       </div>
-      <div className="grow">
-        <h1 className="text-2xl text-[#003587] font-serif">
-          <Link href={`/`}>Treatment Companion</Link>
-        </h1>
-      </div>
+      <div className="grow"></div>
       <button
         id="mobile-nav-button"
         onClick={toggleMenu}
