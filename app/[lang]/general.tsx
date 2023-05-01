@@ -124,59 +124,60 @@ const System = ({ system }: { system: System }) => {
         <h3 className="text-[#2a528a] text-4xl font-serif font-semibold self-center">
           {system.title}
         </h3>
-        <div className="stack">
-          <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-lg">
-            {system.patientFlow.title}
-          </h4>
-          <div className="flex flex-wrap justify-start gap-8 mx-auto">
-            {/* find correct src and edit en.json to supply that */}
-            <Image
-              src={patient}
-              alt={system.patientFlow.patientAlt}
-              className="mx-auto"
-            />
-            <div className="flex flex-col max-w-lg gap-4 grow mx-auto">
-              <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4] max-w-prose">
-                <Image src={pill} alt={system.patientFlow.pillAlt} />
-                <p>{system.patientFlow.pillDescription}</p>
-              </div>
-              <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
-                <Image src={phone} alt={system.patientFlow.phoneAlt} />
-                <p>{system.patientFlow.phoneDescription}</p>
-              </div>
-              <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
-                <Image src={test} alt={system.patientFlow.testAlt} />
-                <p>{system.patientFlow.testDescription}</p>
+        <div className="flex flex-wrap justify-between gap-4 mx-auto">
+          <div className="stack mx-auto">
+            <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-lg">
+              {system.patientFlow.title}
+            </h4>
+            <div className="flex flex-wrap justify-start gap-8 mx-auto max-w-md">
+              <Image
+                src={patient}
+                alt={system.patientFlow.patientAlt}
+                className="mx-auto"
+              />
+              <div className="flex flex-col max-w-lg gap-4 grow mx-auto">
+                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4] max-w-prose">
+                  <Image src={pill} alt={system.patientFlow.pillAlt} />
+                  <p>{system.patientFlow.pillDescription}</p>
+                </div>
+                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
+                  <Image src={phone} alt={system.patientFlow.phoneAlt} />
+                  <p>{system.patientFlow.phoneDescription}</p>
+                </div>
+                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
+                  <Image src={test} alt={system.patientFlow.testAlt} />
+                  <p>{system.patientFlow.testDescription}</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="stack">
-          <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-lg">
-            {system.coordinatorFlow.title}
-          </h4>
-          <div className="flex flex-wrap justify-start gap-8 mx-auto">
-            <Image
-              src={coordinator}
-              alt={system.coordinatorFlow.title}
-              className="mx-auto"
-            />
-            <div className="flex flex-col max-w-lg gap-4 grow mx-auto">
+          <div className="stack mx-auto">
+            <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-lg">
+              {system.coordinatorFlow.title}
+            </h4>
+            <div className="flex flex-wrap justify-start gap-8 max-w-md">
+              <Image
+                src={coordinator}
+                alt={system.coordinatorFlow.title}
+                className="mx-auto"
+              />
               <div className="flex flex-col max-w-lg gap-4 grow mx-auto">
-                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]  max-w-prose">
-                  <Image
-                    src={desktop}
-                    alt={system.coordinatorFlow.desktopAlt}
-                  />
-                  <p>{system.coordinatorFlow.desktopDescription}</p>
-                </div>
-                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
-                  <Image src={check} alt={system.coordinatorFlow.checkAlt} />
-                  <p>{system.coordinatorFlow.checkDescription}</p>
-                </div>
-                <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
-                  <Image src={chat} alt={system.coordinatorFlow.chatAlt} />
-                  <p>{system.coordinatorFlow.chatDescription}</p>
+                <div className="flex flex-col max-w-lg gap-4 grow mx-auto">
+                  <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]  max-w-prose">
+                    <Image
+                      src={desktop}
+                      alt={system.coordinatorFlow.desktopAlt}
+                    />
+                    <p>{system.coordinatorFlow.desktopDescription}</p>
+                  </div>
+                  <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
+                    <Image src={check} alt={system.coordinatorFlow.checkAlt} />
+                    <p>{system.coordinatorFlow.checkDescription}</p>
+                  </div>
+                  <div className="flex items-center gap-2 bg-[#cce0ffe5] rounded-md text-[#2a528a] mx-auto p-4  text-lg border-2 border-solid border-[#4285f4]">
+                    <Image src={chat} alt={system.coordinatorFlow.chatAlt} />
+                    <p>{system.coordinatorFlow.chatDescription}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -196,10 +197,10 @@ type Solution = {
 const Solution = ({ solutions }: { solutions: Solution }) => {
   return (
     <div id="solution flex flex-col justify-center items-center">
-      <div className="stack bg-[#7da9f8] border-[#2a528a] border-solid border-4 p-4 rounded-md text-[#003587] max-w-prose mx-auto">
+      <div className="stack bg-[#cce0ffe5] text-[#2a528a] border-[#4285f4] border-solid border-2 p-4 rounded-md  max-w-prose mx-auto">
         <h3 className="font-bold text-3xl">{solutions.title}</h3>
         <p className="text-lg">
-          {solutions.subtitle}
+          {solutions.subtitle}{" "}
           <span className="font-bold text-xl ">{solutions.subtitleAside}</span>
         </p>
       </div>

@@ -45,15 +45,6 @@ export default async function Home({
               />
             </div>
           </div>
-          {/* <div className="max-w-prose">
-            <h3>
-              Our team of interdisiplinary researchers are making TB digital
-              treatment accessible to the most vulnerable populations. We have a
-              mission to provide Tuberculosis treatment support tools for both
-              healthcare providers and people who are infected with
-              Tuberculosis.
-            </h3>
-          </div> */}
         </div>
         <Problems problems={dictionary.general.problems} />
         <Solution solutions={dictionary.general.solutions} />
