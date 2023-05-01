@@ -5,6 +5,7 @@ import type { Locale, LangParams } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 import "./globals.css";
 import metadataGenerator from "@/metadata-generator";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -13,6 +14,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params: { lang } }: LangParams) {
   return await metadataGenerator("home", lang);
 }
+
+const endpoints = ["about", "methods", "testimonials", "contact"];
 
 export default async function Root({
   children,

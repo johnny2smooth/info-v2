@@ -34,6 +34,7 @@ export default async function Page({
 }
 
 const TeamPhotos = ({ teamMembers }: { teamMembers: TeamMember[] }) => {
+  console.log(teamMembers, new Date());
   return (
     <div className="flex flex-wrap gap-2">
       {teamMembers.map((member, i) => (
@@ -42,8 +43,11 @@ const TeamPhotos = ({ teamMembers }: { teamMembers: TeamMember[] }) => {
             src={`/team/${member.image}.png`}
             alt={`${member.firstName} ${member.lastName}`}
             fill
-            sizes="100%"
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
             className=" bg-slate-900 shadow-md shadow-[#00000075] rounded-full team-pictures object-cover overflow-hidden"
+            priority
           />
         </div>
       ))}
