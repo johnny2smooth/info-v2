@@ -29,7 +29,7 @@ export default async function Home({
                 <h3 className="text-[#003587] max-w-prose">
                   {dictionary.home.subtitle}
                 </h3>
-                <div className="bg-[#cce0ffe5] max-w-prose rounded-md text-[#2a528a] p-4  text-xl border-[#4285f4] border-2 border-solid flex flex-col">
+                <div className="bg-[#cce0ffe5] max-w-prose rounded-md text-[#2a528a] p-4 text-xl border-[#4285f4] border-2 border-solid flex flex-col mx-auto">
                   <span className="font-bold">
                     {dictionary.home.deployed.title}
                   </span>{" "}
@@ -42,6 +42,7 @@ export default async function Home({
                 alt={dictionary.home.imageAlt}
                 height={500}
                 width={500}
+                className="mx-auto"
               />
             </div>
           </div>

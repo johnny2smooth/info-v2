@@ -10,5 +10,5 @@ export async function generateMetadata({
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <main className="stack">{children}</main>;
+  return <main className="mx-auto stack">{children}</main>;
 }

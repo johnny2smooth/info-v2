@@ -50,7 +50,7 @@ export default function Nav({
   }, [isOpen]);
 
   return (
-    <header className="max-w-5xl mx-auto relative w-full flex justify-start items-center gap-4 mb-10 border-b-2 border-solid border-[#4285f4]">
+    <header className="max-w-7xl mx-auto relative w-full flex justify-start items-center gap-4 mb-10 border-b-2 border-solid border-[#4285f4]">
       <div aria-hidden="false" className="flex justify-center items-center">
         <Link href={`/${lang}`} className={`s4 text-[#4969ed]`}>
           <Image

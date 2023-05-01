@@ -21,7 +21,7 @@ export default async function Page({
   const { about, team } = dictionary;
   return (
     <>
-      <div className="p-4 stack">
+      <div className="p-4 stack mx-auto">
         <h2 className="text-[#2a528a] text-6xl">{about.title}</h2>
         <TeamPhotos teamMembers={team.members} />
         <h2 className="text-[#003587] text-3xl">{about.subtitle}</h2>

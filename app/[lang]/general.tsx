@@ -124,9 +124,9 @@ const System = ({ system }: { system: System }) => {
         <h3 className="text-[#2a528a] text-4xl font-serif font-semibold self-center">
           {system.title}
         </h3>
-        <div className="flex flex-wrap justify-between gap-4 mx-auto">
+        <div className="flex flex-wrap w-full justify-between gap-8  mx-auto">
           <div className="stack mx-auto">
-            <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-lg">
+            <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-2xl">
               {system.patientFlow.title}
             </h4>
             <div className="flex flex-wrap justify-start gap-8 mx-auto max-w-md">
@@ -152,7 +152,7 @@ const System = ({ system }: { system: System }) => {
             </div>
           </div>
           <div className="stack mx-auto">
-            <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-lg">
+            <h4 className="bg-[#cce0ffe5] rounded-md text-[#4285f4] mx-auto px-2 py-1 text-2xl">
               {system.coordinatorFlow.title}
             </h4>
             <div className="flex flex-wrap justify-start gap-8 max-w-md">
@@ -197,18 +197,27 @@ type Solution = {
 const Solution = ({ solutions }: { solutions: Solution }) => {
   return (
     <div id="solution flex flex-col justify-center items-center">
-      <div className="stack bg-[#cce0ffe5] text-[#2a528a] border-[#4285f4] border-solid border-2 p-4 rounded-md  max-w-prose mx-auto">
+      <div className="stack bg-[#cce0ffe5] text-[#2a528a] border-[#4285f4] border-solid border-2 p-4 rounded-md  w-full ">
         <h3 className="font-bold text-3xl">{solutions.title}</h3>
-        <p className="text-lg">
-          {solutions.subtitle}{" "}
-          <span className="font-bold text-xl ">{solutions.subtitleAside}</span>
-        </p>
+        <div className="flex flex-wrap gap-4 mx-auto">
+          <p className="text-lg grow max-w-lg">
+            {solutions.subtitle}{" "}
+            <span className="font-bold text-xl ">
+              {solutions.subtitleAside}
+            </span>
+          </p>
+          <p className="text-lg grow max-w-lg">
+            {solutions.subtitle}{" "}
+            <span className="font-bold text-xl ">
+              {solutions.subtitleAside}
+            </span>
+          </p>
+        </div>
       </div>
     </div>
   );
 };
 
-// I could make this an array of objects when I'm drying out the component below
 type Problem = {
   issue: {
     title: string;
