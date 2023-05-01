@@ -11,7 +11,7 @@ export default async function Page({
   return (
     <>
       <div className="p-4 stack">
-        <h2 className="text-[#003587] text-3xl">{testimonials.title}</h2>
+        <h2 className="text-[#2a528a] text-6xl">{testimonials.title}</h2>
         <h3 className="text-[#003587] text-3xl">{testimonials.subtitle}</h3>
         <p>{testimonials.description}</p>
       </div>

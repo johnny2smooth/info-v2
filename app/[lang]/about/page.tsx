@@ -22,7 +22,7 @@ export default async function Page({
   return (
     <>
       <div className="p-4 stack">
-        <h2 className="text-[#003587] text-3xl">{about.title}</h2>
+        <h2 className="text-[#2a528a] text-6xl">{about.title}</h2>
         <TeamPhotos teamMembers={team.members} />
         <h2 className="text-[#003587] text-3xl">{about.subtitle}</h2>
         <p>{about.description}</p>

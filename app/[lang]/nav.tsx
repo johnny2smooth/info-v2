@@ -107,7 +107,7 @@ export default function Nav({
                   <Link
                     href={`/${lang}/${endpoint}`}
                     onClick={toggleMenu}
-                    className={`text-xl active:text-red-400 }`}
+                    className={`text-2xl active:text-red-400 }`}
                   >
                     {/* {translations[endpoint]} */}
                     {translations[endpoint]}
