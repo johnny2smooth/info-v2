@@ -21,8 +21,8 @@ export default function LocaleSwitcher() {
             <Link
               href={redirectedPathName(locale)}
               className={`${
-                currentLocale === locale ? " rounded-full p-4 bg-red-300" : ""
-              } text-lg text-slate-900  hover:text-red-100`}
+                currentLocale === locale ? " rounded-full p-2 bg-red-300" : ""
+              } text-sm text-slate-900  hover:text-red-100 active:text-blue-400`}
             >
               {locale}
             </Link>

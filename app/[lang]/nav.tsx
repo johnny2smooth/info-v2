@@ -88,26 +88,26 @@ export default function Nav({
       {/* Mobile navigation menu */}
       <nav
         id="mobile-nav"
-        className={`absolute border-blue-700 border-2 border-solid z-10 transition-all duration-300 p-4 top-full right-0 mt-2 w-full opacity-95 shadow-lg lg:hidden bg-[#4285f4] rounded-md  ${
+        className={`absolute border-[#4285f4] border-2 border-solid z-10 transition-all duration-300 p-4 top-full right-0 mt-2 w-full  shadow-lg lg:hidden bg-[#e5eeff] rounded-md  ${
           isOpen ? "block" : "hidden"
         }`}
       >
-        <div className="flex justify-end items-end ">
-          <ul className="flex flex-col justify-end items-end">
+        <div className="flex justify-end  items-end ">
+          <ul className="flex flex-col gap-2 justify-end items-end">
             {endpoints.map((endpoint) => {
               return (
                 <li
                   key={endpoint}
-                  className={`block px-4 py-2 hover:bg-red-300 hover:font-bold active:text-red-300 rounded-lg border-2 border-solid border-[#4285f4] ${
+                  className={`block px-4 py-2 hover:bg-red-300 hover:font-bold active:text-red-300 ${
                     currentPage === endpoint.toLowerCase()
-                      ? "border-blue-100 text-white font-bold"
+                      ? "text-blue-400 font-bold"
                       : "text-slate-900 "
                   }`}
                 >
                   <Link
                     href={`/${lang}/${endpoint}`}
                     onClick={toggleMenu}
-                    className={`text-4xl active:text-red-400 }`}
+                    className={`text-xl active:text-red-400 }`}
                   >
                     {/* {translations[endpoint]} */}
                     {translations[endpoint]}
@@ -129,10 +129,13 @@ export default function Nav({
             <Link
               key={endpoint}
               href={`/${endpoint.toLowerCase()}`}
-              className={`text-2xl text-[#003587]  active:text-red-400`}
+              className={`text-2xl ${
+                currentPage === endpoint.toLowerCase()
+                  ? "text-red-400"
+                  : "text-[#003587]"
+              } text-[#003587] hover:text-red-400  active:text-red-400`}
             >
-              {/* {translations[endpoint]} */}
-              {endpoint}
+              {endpoint[0].toUpperCase() + endpoint.slice(1)}
             </Link>
           );
         })}
