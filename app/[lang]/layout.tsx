@@ -28,7 +28,7 @@ export default async function Root({
       <body className="p-4 min-h-[100vh]  relative bg-[#e5eeff]  mx-auto">
         <Nav
           lang={lang}
-          endpoints={["about", "methods", "testimonials", "contact", "team"]}
+          endpoints={["about", "methods", "testimonials", "contact"]}
           translations={dictionary.nav}
         />
         {children}

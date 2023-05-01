@@ -25,7 +25,7 @@ export default async function Page({
         <h2 className="text-[#2a528a] text-6xl">{about.title}</h2>
         <TeamPhotos teamMembers={team.members} />
         <h2 className="text-[#003587] text-3xl">{about.subtitle}</h2>
-        <p>{about.description}</p>
+        <p className="max-w-prose">{about.description}</p>
         {}
       </div>
       <Contact contact={dictionary.general.contact} />

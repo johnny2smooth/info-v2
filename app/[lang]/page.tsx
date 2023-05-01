@@ -24,7 +24,7 @@ export default async function Home({
             <h2 className="text-[#2a528a] text-6xl text-center">
               {dictionary.home.title}
             </h2>
-            <div className="flex justify-around items-end flex-wrap">
+            <div className="flex justify-between items-end flex-wrap">
               <div className="grow stack">
                 <h3 className="text-[#003587] max-w-prose">
                   {dictionary.home.subtitle}

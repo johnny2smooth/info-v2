@@ -12,13 +12,12 @@ export default function Nav({
   translations,
 }: {
   lang: Locale;
-  endpoints: ["about", "methods", "testimonials", "contact", "team"];
+  endpoints: ["about", "methods", "testimonials", "contact"];
   translations: {
     about: string;
     methods: string;
     testimonials: string;
     contact: string;
-    team: string;
   };
 }) {
   const [isOpen, setIsOpen] = useState(false);
